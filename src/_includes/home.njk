@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title + " - " if title |
+length > 0 else "" }} FutureEthics</title>
+<meta name="description" content="{{ description | safe }}">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">        
+<script async src="https://tally.so/widgets/embed.js"></script>
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</head>
+
+<body>
+{% include "partials/_nav.njk" %}
+
+<main>
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Your AI Needs Cultural Red Teaming</h1>
+      <p class="hero-subtitle">
+        Before your AI embarrasses your company across global markets, 
+        let's find the failures first.
+      </p>
+      <div>
+        <a href="#contact" class="cta-button">Make It Safer</a>
+        <a href="#failures" class="cta-button cta-secondary">See The Failures</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="failures" class="section">
+    <div class="page-header">
+      <h2 class="section-title">Real AI Failures That Made Headlines</h2>
+      <p class="page-subtitle">
+        These are the "egg on face" moments that could have been prevented with proper multicultural testing.
+      </p>
+    </div>
+    
+    <div class="failure-grid">
+      
+      <div class="failure-card">
+        <h4>The Gandalf Vulnerability</h4>
+        <p>
+          Popular AI security game repeatedly bypassed by simple cultural code-switching and 
+          non-Latin script attacks that weren't caught in English-only red teaming.
+        </p>
+        <p class="failure-impact">
+          <strong>Impact:</strong> Demonstrated systematic blind spots in multilingual prompt injection defense.
+        </p>
+      </div>
+
+      <div class="failure-card">
+        <h4>Unicode Character Exploits</h4>
+        <p>
+          Major LLM jailbroken using homoglyph attacks with CJK characters and mixed-script inputs, 
+          exploiting tokenization boundary weaknesses unknown to English-focused security teams.
+        </p>
+        <p class="failure-impact">
+          <strong>Impact:</strong> Safety guardrails completely bypassed across multiple language families.
+        </p>
+      </div>
+
+      <div class="failure-card">
+        <h4>Korean Cultural Misunderstanding</h4>
+        <p>
+          AI assistant provided completely inappropriate advice about family relationships 
+          by misunderstanding high-context communication patterns and honorific systems.
+        </p>
+        <p class="failure-impact">
+          <strong>Impact:</strong> Potential relationship damage in culture where family harmony is paramount.
+        </p>
+      </div>
+
+      <div class="failure-card">
+        <h4>Southeast Asian Safety Gaps</h4>
+        <p>
+          Parallel testing revealed 3x higher failure rates in Bahasa and Vietnamese compared to English 
+          when prompted with identical harmful requests across cultural contexts.
+        </p>
+        <p class="failure-impact">
+          <strong>Impact:</strong> Systematic safety degradation across 400M+ speakers left unprotected.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding: 0;">
+  <div class="stats-accent-wrapper">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">350+</span>
+        [cite_start]<div class="stat-label">Expert Red Teamers<br>Across APAC [cite: 17]</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">15+</span>
+        [cite_start]<div class="stat-label">Languages<br>Tested [cite: 17]</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">3x</span>
+        [cite_start]<div class="stat-label">Higher Failure Rates<br>in Non-English [cite: 17]</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">ICLR</span>
+        [cite_start]<div class="stat-label">2025 Published<br>Research [cite: 17]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section">
+    <div class="page-header">
+      <h2 class="section-title">Led by a Pioneer in Multicultural AI Safety</h2>
+      <p class="page-subtitle">
+        <strong>Adrianna Tan</strong> led the world's first 
+        multicultural AI red teaming challenge across Asia-Pacific, 
+        coordinating 350+ experts to create new methodologies for regional safety evaluation.
+      </p>
+    </div>
+    
+    <div class="credentials">
+      <div class="highlight-box">
+        <strong>Published ICLR 2025</strong>
+      </div>
+      <div class="highlight-box">
+        <strong>DoD Essential Pathfinder</strong>
+      </div>
+      <div class="highlight-box">
+        <strong>17+ Years Product Leadership</strong>
+      </div>
+      <div class="highlight-box">
+        <strong>Singapore IMDA Endorsed</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="callout-box">
+      <h3 class="hero-title">Don't Let Cultural Blind Spots Derail Your AI</h3>
+      <p>
+        Test your AI across cultures 
+        before your competitors find your vulnerabilities.
+      </p>
+      <div>
+        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-calendar-link'});"
+        class="cta-button">
+          Schedule Security Consultation
+        </button>
+        <a href="/contact" class="cta-button cta-secondary">Get Sample Report</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "partials/_footer.njk" %}
+</body>
+</html>
